@@ -7,7 +7,7 @@ contract("Voting", accounts => {
 
   // Runs before all tests to set up the contract instance
   before(async () => {
-    votingInstance = await Voting.deployed();
+    votingInstance = await Voting.deploy();
   });
 
   // Test to check if the contract initializes with zero candidates
